@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <!-- Fuente Roboto de Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Formulario</title>
+</head>
+
+<body>
+
+  <main>
+
+    <form class="formulario" id="formulario">
+     
+      <!-- Grupo Usuario -->
+      <div class="formulario__grupo" id="grupo__usuario">
+        <label for="usuario" class="formulario__label">Nombre usuario</label>
+        <input type="text" name="usuario" id="usuario" class="formulario__input" placeholder="santi_quinterog">
+        <p class="formulario__input-error">El nombre de usuario debe tener entre 4 y 16 dígitos y sólo puede contener
+          números, letras y guiones</p>
+      </div>
+
+      <!-- Grupo Nombre -->
+      <div class="formulario__grupo" id="grupo__nombre">
+        <label for="nombre" class="formulario__label">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre" class="formulario__input" placeholder="Santiago Quintero">
+        <p class="formulario__input-error">El nombre completo debe tener entre 4 y 17 dígitos y sólo puede contener
+          letras</p>
+      </div>
+
+      <!-- Grupo Correo -->
+      <div class="formulario__grupo" id="grupo__correo">
+        <label for="correo" class="formulario__label">Correo</label>
+        <input type="email" name="correo" id="correo" class="formulario__input" placeholder="santiago.quinterog@upb.edu.co">
+        <p class="formulario__input-error">Correo inválido</p>
+      </div>
+
+      <!-- Grupo Contraseña -->
+      <div class="formulario__grupo" id="grupo__password">
+        <label for="password" class="formulario__label">Contraseña</label>
+        <input type="password" name="password" id="password" class="formulario__input" placeholder="1234567890">
+        <p class="formulario__input-error">La contraseña tiene que tener de 6 a 12 dígitos</p>
+      </div>
+
+      <!-- Grupo Teléfono -->
+      <div class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Celular</label>
+        <input type="number" name="telefono" id="telefono" class="formulario__input" placeholder="0123456789">
+        <p class="formulario__input-error">El número de celular debe tener 10 dígitos</p>
+      </div>
+
+      <!-- Grupo Botones -->
+      <div class="formulario__grupo formulario__grupo-btns">
+        <button type="reset" class="formulario__btn">Borrar campos</button>
+        <button type="submit" class="formulario__btn">Guardar formulario</button>
+      </div>
+      
+    </form>
+
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
